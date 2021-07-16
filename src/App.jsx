@@ -1,13 +1,24 @@
+import { Route } from "react-router-dom";
+
+// HOC
+import DefaultHOC from "./HOC/Default.HOC";
+import MovieHOC from "./HOC/Movie.HOC";
+
+// Pages
+import HomePage from "./Pages/Home.pages";
+import Movie from "./Pages/Movie.pages";
+
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-6xl hover:text-blue-500" >Hello sachin!!!</h1>
-
-      <button className="border-2 p-1 border-blue-500 rounded bg-blue-500 text-white m-4 hover:bg-red-500">click me</button>
-
-    </div>
+    <>
+      <DefaultHOC path="/" exact component={HomePage} />
+      <MovieHOC path="/movie/:id" exact component={Movie} />
+    </>
   );
 }
 
-export default App;
+export default App

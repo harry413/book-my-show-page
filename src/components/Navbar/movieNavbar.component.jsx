@@ -4,6 +4,7 @@ import {
   BiSearch,
   BiMenu,
   BiChevronDown,
+
 } from "react-icons/bi";
 
 
@@ -75,17 +76,17 @@ const NavLg = () => {
   );
 };
 
-const Navbar = () => {
+const movieNavbar = () => {
   return (
     <>
-      <nav className="bg-bms-700 p-4">
+      <nav className="absolute inset-x-0 z-30 bg-opacity-10 backdrop-filter backdrop-blur-lg bg-bms-700 p-4">
         <div className="md:hidden">
           {/* Mobile screen */}
           <NavSm />
         </div>
-        <div className="hidden md:flex lg:hidden">
+        <div className="hidden md:block lg:hidden">
           {/* Medium/Tab screen */}
-          <NavMd />
+          <NavSm />
         </div>
         <div className="hidden w-full lg:flex">
           {/* Large screen */}
@@ -96,4 +97,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default movieNavbar;
