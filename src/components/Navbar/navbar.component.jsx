@@ -6,9 +6,6 @@ import {
   BiChevronDown,
 } from "react-icons/bi";
 
-
-
-
 const NavSm = () => {
   return (
     <>
