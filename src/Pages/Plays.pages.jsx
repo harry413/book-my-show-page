@@ -54,6 +54,14 @@ const Plays = () => {
                 title="Language"
                 tags={["Tamil", "Telegu", "English"]}
               />
+              <PlaysFilter
+                title="categories"
+                tags={["online streaming events", "kids", "performance", "music show"]}
+              />
+              <PlaysFilter
+                title="more filters"
+                tags={["outdore events", "kids allows", "online streaming"]}
+              />
             </div>
           </div>
         </div>

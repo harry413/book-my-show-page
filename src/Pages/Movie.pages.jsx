@@ -94,6 +94,10 @@ const Movie = () => {
         <div className="my-8">
           <hr />
         </div>
+
+
+
+        
         <div className="my-8">
           <h2 className="text-gray-800 font-bold text-2xl mb-4">Cast & crew</h2>
 

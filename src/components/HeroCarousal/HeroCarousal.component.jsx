@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroSlider from "react-slick";
+import axios from "axios";
 
 // Compoenent
 import { NextArrow, PrevArrow } from "./Arrows.component";
 
 const HeroCarousal = () => {
+
+  const [images, setImages] = useState([]);
+
+  useEffect
+
+
   const settingsLG = {
     arrows: true,
     autoplay: true,
